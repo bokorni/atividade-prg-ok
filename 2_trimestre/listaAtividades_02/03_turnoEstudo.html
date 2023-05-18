@@ -12,10 +12,22 @@
     */
 
     //ENTRADA
-
-    
+     const per= prompt(`Informe o período em que estuda, digite M-matutino ou V-Vespertino ou N-Noturno.`).toUpperCase().trim();
+     
     //PROCESSAMENTO
-
+     if (per=="M") {
+        alert(`Bom dia`)
+     }
+     else if(per=="V") {
+        alert(`Boa tarde`)
+     }
+     else if(per=="N"){
+        alert(`Boa noite`)
+     }
+     else {
+      alert(`Opção inválida somente M, V ou N`);
+     }
+    
     
     //SAÍDA
     
