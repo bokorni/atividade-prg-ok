@@ -11,12 +11,37 @@
     */
 
     //ENTRADA
-
+    const n = Number(prompt(`Informe um número inteiro menor que 1000`));
+    let cent = 0;
+    let dez = 0;
+    let uni = 0;
+    let res = 0;
 
     //PROCESSAMENTO
+    if (n >= 100) {
+        cent = Math.floor(n / 100)
+        res = n % 100;
+        if (res >= 10) {
+            dez = Math.floor(res / 10)
+            uni = res % 10
+        }
+        else {
+            uni = res
+        }
+    }
+    else {
+        
+        if (n >= 10) {
+            dez = Math.floor(n / 10);
+            uni = n % 10;
+        }
+        else {
+            uni = n
+        }
+    }
 
-    
-    //SAÍDA
+    alert(`O número selecionado tem ${cent} centenas, ${dez} dezenas e ${uni} unidades`);
+
 
 
 </script>

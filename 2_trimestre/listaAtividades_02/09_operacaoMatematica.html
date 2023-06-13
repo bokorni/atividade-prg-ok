@@ -8,11 +8,28 @@
     */
 
     //ENTRADA
-
-
+    const num1 = prompt(`Informe o 1° número`);
+    const num2 = prompt(`Informe o 2° número`);
+    const op = prompt(`Informe  a operação que deseja realizar:"+" para soma, "-" para subtração, "*" para multiplicação e "/" para divisão`)
+    let resultado = 0;
     //PROCESSAMENTO
+    if (op = "+") {
+        resultado = num1 + num2;
+    }
+    else if (op = "-") {
+        resultado = num1 - num2
 
-    
+    }
+    else if (op = "*") {
+        resultado = num1 * num2
+    }
+    else if (op = "*") {
+        resultado = num1 / num2
+    }
+    if(resultado >= 0 && resultado % 2 ==0 && Number.isInteger(resultado)){
+        alert(`O resultado da operação é ${resultado}, esse número é par, positivo e decimal`);
+    }
+
     //SAÍDA
 
 
