@@ -11,9 +11,40 @@
     */
 
     //ENTRADA
-
+    const tel = prompt(`Vocẽ telefonou para a vítima? Responda com sim ou não`).trim().toLowerCase
+    const loc = prompt(`Vocẽ esteve no local do crime? Responda com s ou n`).trim().toLowerCase
+    const mora = prompt(`Vocẽ mora perto da vítima? Responda com s ou n`).trim().toLowerCase
+    const dev = prompt(`Vocẽ devia para a vítima? Responda com s ou n`).trim().toLowerCase
+    const tra = prompt(`Vocẽ já trabalhou com a vítima? Responda com s ou n`).trim().toLowerCase
     //PROCESSAMENTO
-
+    let num = 0
+    if(tel =="s") {
+        num + 1
+    }
+    if(loc =="s") {
+        num + 1
+    }
+    if(mora =="s") {
+        num + 1
+    }
+    if(dev =="s") {
+        num + 1
+    }
+    if(tra =="s") {
+        num + 1
+    }
+    if (num <= 1) {
+        alert(`o interrogado é inocente.`)
+    }
+    if (num == 2) {
+        alert(`o interrogado é suspeito.`)
+    }
+    else if (num == 3 || num == 4 ) {
+        alert(`o interrogado é cúmplice.`)
+    }
+    else {
+        alert(`o interrogado é assassino.`)
+    }
     //SAÍDA
 
 </script>
