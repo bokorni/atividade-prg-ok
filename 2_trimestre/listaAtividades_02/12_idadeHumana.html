@@ -7,9 +7,19 @@
     // - cães grandes: fator 7.
 
     // Entrada
-
-    
+    const porte = prompt(`Insira o porte de seu cão: P para peq;ueno, M para médio e G para grande`)
+    const idade = Number (prompt(`Insira a idade de seu cão`));
+    let idadecao = 0
     // Processamento
+    if (porte == "P") {
+     idade * 5
+    }
+    else if (porte == "M" ) {
+        idade * 6
+    }
+    else if (porte == "G") {
+        idade * 7
+    }
 
     
     // Saída

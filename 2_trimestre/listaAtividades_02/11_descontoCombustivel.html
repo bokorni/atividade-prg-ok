@@ -14,11 +14,29 @@
     */
 
     //ENTRADA
-
-
+    const litro = Number (prompt(`Insira a quantidade de litros abastecida`))
+    const tipo = prompt(`Insira o tipo de combustível que deseja utilizar: A para Álcool e G para gasolina`).trim().toUpperCase();
+    let valor = 0
+    let mensagemfinal = `O valor a ser pago é R$${valor}`
     //PROCESSAMENTO
-
+    if (litro <=20 && tipo == "A") {
+       valor = litro * (6.10 * 0.97)
+       mensagemfinal = `O valor a ser pago é R$${valor}`
+    }
+    else if (litro >20 && tipo == "A") {
+        valor = litro * ( 6.10 * 0.95)
+        mensagemfinal = `O valor a ser pago é R$${valor}`
+    }
+    if (litro <=20 && tipo == "G") {
+        valor = litro * (6.50 * 0.96)
+        mensagemfinal = `O valor a ser pago é R$${valor}`
+    }
+    else if (litro >20 && tipo == "G") {
+        valor = litro * (6.50 * 0.94)
+        mensagemfinal = `O valor a ser pago é R$${valor}`
+    }
     
+    alert(mensagemfinal)
     //SAÍDA
 
 
