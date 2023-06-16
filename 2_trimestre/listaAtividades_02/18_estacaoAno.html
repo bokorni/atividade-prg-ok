@@ -6,11 +6,37 @@
     */
 
     //ENTRADA
-
-
+      const hem = prompt(`Informe em qual hemisfério você está, S para Sul e N para Norte`).trim().toUpperCase
+      const mes = prompt(`Informe o mês que você está, de acordo com o número de cada mês`)
     //PROCESSAMENTO
+     if (hem == "S") {
+        if(mes <=6 && mes >3) {
+            alert(`É outono`)
+        }
+     }
+     else if (mes <=9 && mes >6 ) {
+        alert(`É inverno`)
+     }
+     else if (mes <=12 && mes >9) {
+        alert(`É primavera`)
+     }
+     else if (mes <=3 && mes >0) {
+        alert(`É primavera`)
+     }
 
-    
+     if (hem == "N") {
+        if(mes <=6 && mes >3)
+        alert(`É primavera`)
+     }
+     else if (mes <=9 && mes >6) {
+        alert(`É verão`)
+     }
+     else if (mes <=12 && mes >9 ){
+        alert(`É outono`)
+     }
+     else if (mes <=3 && mes >0) {
+        alert(`É inverno`)
+     }
     //SAÍDA
 
 

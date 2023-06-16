@@ -9,10 +9,25 @@
     // Entre 5.9 e zero            E
 
     // Entrada
-
-    
+const con = Number(prompt(`Insira a nota concebida`));
+    let mensagemfinal = `Sua nota conceito é `
     // Processamento
-
+     if(con >=9) {
+      mensagemfinal += "A"
+     }
+     else if(con >=8 && con <8.9) {
+        mensagemfinal += "B"
+     }
+     else if(con >=7 && con <7.9) {
+        mensagemfinal += "C"
+     }
+     else if(con >=6 && con <6.9) {
+        mensagemfinal += "D"
+     }
+     else if(con >=0 && con <5.9) {
+        mensagemfinal += "E"
+     }
+     alert(mensagemfinal);
     
     // Saída
 
